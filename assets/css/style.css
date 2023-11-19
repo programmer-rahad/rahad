@@ -1,0 +1,1567 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Md Rahaduzzaman Rahad
+Template Name: Rahad - Personal Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/* TABLE OF CONTENTS 
+
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* 02.PRELOADER & BOUNCE CSS STYLE
+* 03.HOMEPAGE CSS STYLE
+* 04.ABOUT CSS STYLE
+* 05.COUNTER UP CSS STYLE
+* 06.SERVICE CSS STYLE
+* 07.WORK CSS STYLE
+* 08.TESTIMONIAL CSS STYLE
+* 09.CONTACT CSS STYLE
+* 10.FOOTER CSS STYLE
+* 11.BLOG PAGES DESIGN CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Montserrat:300,400,500,600,700,800,900|Poppins:300,400,500,600,700');
+
+
+body {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #232323;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {width: 100%;}
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+p {line-height: 30px;}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+.no-padding {padding: 0}
+.section-padding {padding: 70px 0px;}
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title h2 {
+	margin-top: 0;
+	font-weight: 900;
+	text-transform: capitalize;
+	font-size: 45px;
+	color: #fff;
+	text-shadow: 0 0 1px #000 , 0 0 1px #000;
+	word-spacing: 5px;
+	letter-spacing: 2px;
+}
+.section-title p {font-weight: 300;}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER & BOUNCE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.preloader {
+    background: #000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 8px solid #fff;
+    border-right: 8px solid #000;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -webkit-animation: spinner 1000ms infinite linear;
+    animation: spinner 1000ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-area {
+    height: 100%;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.welcome-image-area {
+    position: relative;
+    height: 100%;
+    background: url(../images/bg/bg2.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.welcome-image-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.particle-bg {
+    position: relative;
+    height: 100%;
+    background: url(../images/bg/bg2.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.particle-bg:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text h1 {
+    color: #fafafa;
+    font-size: 70px;
+    font-weight: 700; 
+    margin-bottom: 50px;
+}
+
+.header-text .btn1 {
+	border: 1px solid #ddd;
+    background: rgba(0,0,0,.2);	
+	padding:8px 21px;
+    border-radius: 3px;
+	display: inline-block;
+	margin-top: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 16px;
+	z-index: 1; 
+	transition: all 0.5s ease-out;
+	color: #fff;
+}
+
+.header-text .btn1:hover {
+	color: #000;	
+	background: #fff;	
+	border-color:#fff;
+	border-radius: 2px;
+}
+
+
+.header-text .home-arrow-down {
+    text-align: center;
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header-text .home-arrow-down .btn {
+    font-size: 30px;
+}
+
+.header-text .home-arrow-down .btn:focus {
+    outline: none;
+}
+
+.header-text .home-arrow-down .fa {
+    color: #fafafa;
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation-name: home-arrow-down;
+    animation-name: home-arrow-down;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes home-arrow-down {
+    from {
+        -webkit-transform: translate3d( 0, 0px, 0);
+        transform: translate3d( 0, 0px, 0);
+        opacity: 0;
+    }
+    10% {
+        -webkit-transform: translate3d( 0, 5px, 0);
+        transform: translate3d( 0, 5px, 0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translate3d( 0, 30px, 0);
+        transform: translate3d( 0, 30px, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes home-arrow-down {
+    from {
+        -webkit-transform: translate3d( 0, 0px, 0);
+        transform: translate3d( 0, 0px, 0);
+        opacity: 0;
+    }
+    10% {
+        -webkit-transform: translate3d( 0, 5px, 0);
+        transform: translate3d( 0, 5px, 0);;
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: translate3d( 0, 30px, 0);
+        transform: translate3d( 0, 30px, 0);
+        opacity: 0;
+    }
+}
+
+.header-top-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.logo {
+    padding-top: 38px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+ 
+
+.logo a {
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 33px;
+    font-family: 'Dancing Script', cursive;
+    transition-duration: .45s;
+}
+.menu-bg .logo a {
+    font-size: 28.5px;
+}
+.mainmenu {
+    margin-top: 10px; 
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.mainmenu .navbar-nav li a {
+    color: #fff;
+    font-size: 13px;
+    padding: 20px 15px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.menu-bg .mainmenu .navbar-nav li a {
+    font-size: 12px; 
+}
+
+.mainmenu .navbar-nav li a:focus, 
+.mainmenu .navbar-nav li a:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.menu-bg {
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+	background: rgba(0,0,0,.8);
+}
+
+.menu-bg .logo { 
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding-top: 24px;
+}
+
+.menu-bg .mainmenu {
+    margin-top: 0px;
+}
+
+.menu-bg .mainmenu .navbar-nav li a {
+    position: relative;
+}
+
+.menu-bg .mainmenu .navbar-nav li a::after {
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 1px;
+	bottom: 17px;
+	background: #fff;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+	left: 15%;
+}
+
+.menu-bg .mainmenu .navbar-nav li a:hover:after,
+.menu-bg .mainmenu .navbar-nav li.active a:after {
+    width: 70%;
+}
+
+.menu-bg .mainmenu .navbar-nav li ul li a::after {
+    display: none;
+}
+
+/*
+* --------------------=
+* DROPDOWN 
+* --------------------=
+*/
+
+.mainmenu ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+.menu-bg .mainmenu ul { 
+    padding-top: 5px;
+}
+.mainmenu li ul.sub-menu,
+.mainmenu ul li ul.sub-menu li ul.sub-menu {
+    background: #000;
+    left: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 115%;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    visibility: hidden;
+    width: 120px;
+    z-index: 999;
+}
+
+.mainmenu ul li ul.sub-menu li ul.sub-menu {
+    top: 0;
+    left: 100%;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.mainmenu ul li ul.sub-menu li {
+    padding: 0;
+    width: 100%;
+}
+
+.mainmenu ul li:hover ul.sub-menu {
+    top: 100%;
+    opacity: 1;
+    z-index: 999;
+    visibility: visible;
+}
+
+.mainmenu ul.nav > li ul li:hover ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mainmenu ul li ul.sub-menu li a {
+    color: #fff !important;
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px 12px 20px;
+}
+
+.mainmenu ul li ul.sub-menu li:last-child a {
+    border-bottom: none;
+}
+
+.mainmenu ul li:hover ul.sub-menu li a:hover {
+    text-decoration: none;
+    background: #333;
+    padding: 8px 10px 12px 20px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* VIDEO BACKGROUND
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-video-area {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+    background-position: center center;
+}
+
+.welcome-video-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.about-area {
+	padding: 64px 0 70px;
+}
+
+.about-info h2 {
+	font-size: 20px;
+}
+
+.about-info h3 {
+	color: #444;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.about-info > p {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 29px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.social-icon {
+	margin-bottom: 20px;
+}
+
+.social-icon a {
+	border: 1px solid #ddd;
+	color: #444;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.social-icon a:hover {
+	background: rgba(0,0,0,.5);
+	color: #000;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+a.theme-btn-c {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	color: #444;
+	display: inline-block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 7px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	-webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+a.theme-btn-c:hover {
+	border: 1px solid #fff;
+	color: #fff;
+	background: rgba(0,0,0,.5);
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.COUNTER UP CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.counter-area {
+    background: #f8f8f8;
+}
+
+.single-counter {
+	padding: 45px 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.single-counter h2 {
+	margin-top: 25px;
+	margin-bottom: 12px;
+    color: #232323;
+	letter-spacing: 2px;
+}
+
+.single-counter h4 {
+    color: #232323;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 1px;
+}
+
+.single-counter i{
+    font-size: 20px;
+    color: #232323;
+	border: 1px solid #ddd;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	line-height: 2.1;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+	position: relative;
+}
+
+.single-counter i::after {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	content: "";
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0,.1);
+	-webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0,.1);
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.single-counter:hover {
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #fff;
+}
+
+.single-counter:hover i {
+	border-color: #fff;
+	transform: scale(1.6);
+	-webkit-transform: scale(1.6);
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+	-webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+	text-shadow: 0px 0px 1px #000;
+	color: #fff;
+}
+
+.single-counter:hover i:after {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {}
+
+.service-icon {
+	position: absolute;
+	font-size: 30px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+	background: #F5F5F5;
+    border: 1px solid #fff;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	text-align: center;
+	color: #1C1C1C;
+	line-height: 80px;
+	margin-right: 25px;
+	margin-bottom: 50px;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+}
+
+.service-icon::after {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	content: "";
+	background: transparent;
+	top: 0px;
+	left: 0px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 1px solid #fff;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	visibility: hidden;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+}
+
+.service-icon::before {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	content: "";
+	background: transparent;
+	top: 0px;
+	left: 0px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 1px solid #fff;
+	-webkit-transition: all .4s ease-out;
+	transition: all .4s ease-out;
+	visibility: hidden;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+}
+
+.service-text {
+	padding-left: 110px;
+}
+
+.single-service:hover .service-icon {
+	background: #fff;
+	color: #fff;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.26);
+	border: 1px solid;
+    text-shadow: 0px 0px 1px #000;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);    
+}
+
+.single-service:hover .service-icon:after,
+.single-service:hover .service-icon:before{
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	visibility: visible;
+}
+
+
+.service-text h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    color: #232323;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.service-text p {
+    color: #232323;
+}
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.WORK CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.work {
+    background: #f8f8f8;
+	padding-top: 70px;
+}
+
+.work-inner .mix {
+    display: none;
+}
+
+ul.work {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul.work li {
+	display: inline-block;
+	margin: 0 4px;
+	text-transform: uppercase;
+	font-size: 13px;
+	border: 1px solid #fff;
+	padding: 3px 10px;
+	cursor: pointer;
+	margin-bottom: 15px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+    background: rgba(0,0,0,0.6);
+}
+
+ul.work li::after {
+	height: 100%;
+	width: 100%;
+    top:0;
+	left: -100%;
+	background: #fff;
+	content: "";
+	position: absolute;
+	z-index: -1;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+ul.work li:hover {
+    border-color: #fff;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.1);
+	color:#555;
+    background: #f5f5f5;
+}
+
+ul.work li:hover:after {
+    left:0;
+}
+
+ul.work li.active {
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.1);
+	color: #555;
+    background: #f5f5f5;
+}
+
+ul.work li.active:hover {
+    text-shadow: none;
+    background: #fff;
+}
+
+.work .item {
+    padding: 0;
+    margin: 0;
+}
+
+.work .col-md-4 {
+    padding: 0;
+    margin: 0;
+}
+
+.work figure.effect-ruby img {
+    height: auto;
+    width: 100%;
+}
+
+.work .grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.work .grid figure:hover {
+    background: #000;
+}
+
+.work figure.effect-ruby h2 {
+    margin-top: 20%;
+    opacity: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    display: inline-block;
+    color: #fff;
+}
+
+.work figure.effect-ruby p {
+    font-size: 14px;
+    text-transform: capitalize;
+    border: none;
+    padding: 0;
+    margin: 5px 0px;
+}
+
+.work figure.effect-ruby p strong {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.work .item:hover figure.effect-ruby h2 {
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    opacity: 1;
+}
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.TESTIMONIAL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.testimonial-area {
+    background: #f8f8f8;
+}
+
+.single-testimonial h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    color: #232323;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.single-testimonial h3 {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.single-testimonial p {
+    line-height: 25px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin: 5px 7px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    background: #000;
+}
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-me-area {}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 45px;
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 1.42;
+	color: #000;
+	margin-bottom: 25px;
+    border:0px solid;
+    box-shadow: 0px 0 1px 0px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0px 0 1px 0px rgba(0, 0, 0, .3);
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.form-control:focus {
+	border-color: #fff;
+	outline: 0;
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, .7);
+}
+
+.contact-form button.btn {
+	display: inline-block;
+	color: #444;
+	background: none;
+	padding: 10px 30px;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.contact-form button.btn:hover {
+	background: rgba(0,0,0,.7);
+	border-color: transparent;
+	color: #fff;
+}
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.footer-area {
+    padding: 50px 0px;
+}
+
+.lin-brk {
+    position: relative;
+}
+
+.lin-brk::before {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	top: -55px;
+	left: 0;
+	content: "";
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,.2);
+}
+
+.social-links ul {
+    padding: 0;
+    margin-top: 0px;
+}
+
+.social-links ul li {
+    display: inline-block;
+}
+
+.social-links ul li a {
+	font-size: 15px;
+	color: #111;
+	margin: 0px 10px;
+	display: block;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	line-height: 2;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    color: #232323;
+}
+
+.social-links ul li a:hover {
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.15);
+    color: #000;
+}
+
+.footer-area p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #222222;
+}
+
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 11.BLOG PAGES DESIGN CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.blog-page-design-area {
+    background: #fff;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.blog-page-design-area .header-top-area {
+    background: #000;
+}
+
+.blog-page-title-area h2 {
+	color: #fff;
+	text-shadow: 0px 0px 2px #000;
+	font-size: 45px;
+	font-weight: bold;
+    text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.single-blog-post {
+    margin-bottom: 50px;
+}
+
+.single-blog-post h2 {
+    font-size: 22px;
+}
+
+.single-blog-post a.read-more {
+    background: #000;
+    color: #fff;
+    padding: 6px 20px;
+    border: 1px solid #000;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.single-blog-post a.read-more:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.post-date {
+    margin-bottom: 10px;
+}
+
+.post-date span {
+    margin-right: 20px;
+}
+
+.post-date span i {
+    margin-right: 5px;
+    color: #333;
+}
+
+.single-blog-post p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-carosel-control {
+    position: absolute;
+    top: 50%;
+    color: #000;
+    font-size: 30px;
+    margin-top: -50px;
+    background: #333;
+    height: 100px;
+    width: 25px;
+    text-align: center;
+    line-height: 99px;
+}
+
+.blog-carosel-control.right {
+    right: 0px;
+    left: auto;
+}
+
+.pagination {
+    margin: 0;
+}
+
+ul.blog_pagination li a {
+    border: 1px solid #e8e8e9;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    color: #353535;
+    font-size: 16px;
+    height: 35px;
+    line-height: 20px;
+    margin: 5px;
+    width: 35px;
+}
+
+.black-icon {
+    background: #333 none repeat scroll 0 0 !important;
+    color: #fff !important;
+}
+
+.black-icon:hover {
+    background: #333 !important;
+}
+
+.black-icon i {
+    font-size: 14px;
+}
+
+ul.blog_pagination li a:hover {
+    color: #fff;
+    background: #333;
+    border: 1px solid #333;
+}
+
+.single-side-bar {
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.single-side-bar h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.single-side-bar input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #333;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #e3e8f0;
+    height: 50px;
+    float: left;
+}
+
+.single-side-bar input:hover,
+.single-side-bar input:focus {
+    border: 1px solid #333;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: 0 none;
+}
+
+.single-side-bar button {
+    background: #333 none repeat scroll 0 0;
+    border: 1px solid #333;
+    color: #fff;
+    height: 42px;
+    padding: 0 32px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.single-side-bar button:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid #333;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.single-side-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.single-side-bar ul li a {
+    color: #767676;
+    display: block;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.single-side-bar ul li a span {
+    float: right;
+}
+
+.single-side-bar ul li a:hover {
+    color: #333
+}
+
+.single-blog-social-icon {
+    overflow: hidden;
+    float: left;
+    width: 177px;
+    margin-bottom: 10px;
+}
+
+.single-blog-social-icon i {
+    border: 1px solid #333;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    float: left;
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 15px;
+    text-align: center;
+    width: 50px;
+}
+
+.tag {
+    overflow: hidden;
+}
+
+.tag a {
+    color: #000;
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 7px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 5px 8px;
+    border: 1px solid #333;
+}
+
+.tag a:hover {
+    color: #000;
+    border: 1px solid #333;
+    background: transparent;
+}
+
+.single-blog-post-details blockquote {
+    font-size: 16px;
+    line-height: 28px;
+    font-style: italic;
+}
+
+.next-previews-button-design {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.next-previews-button-design a {
+    color: #000;
+}
+
+.post-comments-area {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.post-comments-area h2 {
+    margin-bottom: 20px;
+}
+
+.single-comment {
+    margin-bottom: 60px;
+	position: relative;
+}
+
+.comment-img img {
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+	position: absolute;
+	height: 100px;
+}
+
+.comment-txt {
+    padding-left: 130px;
+}
+
+.single-comment h5 {
+    font-weight: 700;
+}
+
+.single-comment a {
+    color: #333;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.single-comment a:hover {
+    color: #333;
+}
+
+.single-comment a i {
+    font-size: 10px;
+    background: #767676 none repeat scroll 0 0;
+    color: #fff;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.single-comment a:hover i {
+    background: #333 none repeat scroll 0 0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.comment-form-area {
+    margin-left: 130px;
+}
+
+.comment-form-area input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #e3e8f0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #333;
+    height: 50px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.comment-form-area input:hover,
+.comment-form-area input:focus {
+    border: 1px solid #333;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: 0 none;
+}
+
+.comment-form-area textarea {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #e3e8f0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #333;
+    height: 150px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.comment-form-area textarea:hover,
+.comment-form-area textarea:focus {
+    border: 1px solid #333;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: 0 none;
+}
+
+.comment-form-area button {
+    background: #000 none repeat scroll 0 0;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 16px;
+    padding: 7px 10px;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.comment-form-area button:hover {
+    background: transparent;
+    color: #000;
+}
+
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 15px;
+	height: 4px;
+	margin: 5px 7px;
+	opacity: 0.5;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	background: #000;
+}
+
+/* Scroll Up Button Design*/
+
+#scrollUp {
+	background: #fff;
+    border: 1px solid #eee;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	bottom: 44px;
+	color: #fff;
+	font-size: 22px;	
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	text-decoration: none !important;
+    -webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	width: 40px;
+	z-index: 1000;
+	text-shadow: 0px 0px 1px #000;
+}
+
+#scrollUp:hover {
+	border-color: #fff;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/*Demo Css*/
+
+.demo-header h2 {
+	margin-top: 50px;
+	font-size: 55px;
+	font-weight: 900;
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 25px;
+}
+
+.single-demo a,
+.single-demo a:hover {
+	color: #000;
+}
+.single-demo h3 {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.single-demo.mt100 {
+	margin-top: 100px
+}
+.single-demo.mt50 {
+	margin-top: 50px
+}
+.single-demo.mb100 {
+	margin-bottom: 100px
+}
+
